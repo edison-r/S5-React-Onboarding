@@ -1,8 +1,10 @@
-import './App.css'
+import HeaderOrganism from "./components/organisms/HeaderOrganism";
 
 function App() {
     return (
-        <h1 className='text-4xl font-bold'>Hello world!</h1>
+        <> 
+            <HeaderOrganism />            
+        </>
     );
 }
 
