@@ -1,14 +1,12 @@
-/* MAIN -  ARTÍCULOS */
-
 .articles__container {
     position: relative;
     max-width: 1200px;
+    height: 700px;
     margin: 0 auto;
     padding: var(--spacing-xxl);
     text-align: center;
 }
 
-/* Navegación */
 .articles__nav ul {
     display: flex;
     justify-content: center;
@@ -25,6 +23,7 @@
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--dark-gray);
+    cursor: pointer;
     padding-bottom: var(--spacing-xs);
     display: inline-block;
     border-bottom: 3px solid transparent;
@@ -33,12 +32,11 @@
 .articles__nav a:hover {
     color: var(--secondary-color);
 }
-.articles__nav a.active-tab {
+.articles__nav a.active--tab {
     border-bottom: 3px solid var(--secondary-color);
     border-color: var(--secondary-color);
 }
 
-/* Artículos */
 .article {
     display: none;
     align-items: center;

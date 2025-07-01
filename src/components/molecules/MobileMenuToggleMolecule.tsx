@@ -1,6 +1,6 @@
 type MobileMenuToggleMoleculeProps = {
     isOpen: boolean;
-    setIsOpen: (isOpen: boolean) => void;
+    setIsOpen: (isOpen: boolean) => void
 };
 
 export default function MobileMenuToggleMolecule({ isOpen, setIsOpen }: MobileMenuToggleMoleculeProps) {
