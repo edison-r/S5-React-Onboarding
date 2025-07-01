@@ -14,7 +14,10 @@ export default function MobileMenuToggleMolecule({ isOpen, setIsOpen }: MobileMe
 
     return (
         <>
-            <a onClick={handleClick} className={toggleClassName}>
+            <a href="#" onClick={(e) => {
+                e.preventDefault();
+                handleClick();
+                }} className={toggleClassName}>
                 <img 
                     src={
                         isOpen

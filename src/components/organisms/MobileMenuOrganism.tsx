@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ButtonAtom from "../atoms/ButtonAtom";
 import MobileMenuToggleMolecule from "../molecules/MobileMenuToggleMolecule"
-import "./MobileMenuOrganism.css";
 
 export default function MobileMenuOrganism(){
     const [isOpen, setIsOpen] = useState(false);
 
-    // Función para manejar el scroll con useEffect
+    useEffect(() => {
+        if (isOpen) {
+        document.body.classList.add("no-scroll");
+        } else {
+        document.body.classList.remove("no-scroll");
+        }
+
+        return () => {
+        document.body.classList.remove("no-scroll");
+        };
+    }, [isOpen]);
 
     return(
         <div className="header__mobile">
