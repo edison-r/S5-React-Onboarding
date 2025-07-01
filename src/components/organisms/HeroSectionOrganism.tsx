@@ -1,5 +1,6 @@
 import BannerDecorationAtom from "../atoms/BannerDecorationAtom";
 import ButtonAtom from "../atoms/ButtonAtom";
+import "./HeroSectionOrganism.css";
 
 export default function HeroSectionOrganism(){
     return(

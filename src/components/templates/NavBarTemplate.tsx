@@ -1,5 +1,6 @@
 import ButtonAtom from "../atoms/ButtonAtom";
 import MobileMenuOrganism from "../organisms/MobileMenuOrganism";
+import "./NavBarTemplate.css";
 
 export default function NavBarTemplate(){
     return (

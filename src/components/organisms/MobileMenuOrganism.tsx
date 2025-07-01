@@ -1,8 +1,9 @@
 import { useState } from "react";
 import ButtonAtom from "../atoms/ButtonAtom";
 import MobileMenuToggleMolecule from "../molecules/MobileMenuToggleMolecule"
+import "./MobileMenuOrganism.css";
 
-export default function MobileMenuMolecule(){
+export default function MobileMenuOrganism(){
     const [isOpen, setIsOpen] = useState(false);
 
     // Función para manejar el scroll con useEffect

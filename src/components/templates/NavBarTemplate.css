@@ -1,0 +1,38 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.header__logo img {
+    height: 25px;
+}
+
+.header__nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__menu {
+    display: flex;
+    margin: 0;
+    padding: var(--spacing-none);
+}
+
+.header__menu li {
+    margin: 0 var( --spacing-md);
+}
+
+.header__menu a {
+    color: var(--dark-gray);
+}
+
+.header__menu a:hover{
+    color: var(--dark-red);
+}
+
+.header__mobile {
+    display: none;
+}

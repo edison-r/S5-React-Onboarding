@@ -1,3 +1,5 @@
+import "./ButtonAtom.css";
+
 interface ButtonProps {
   text: string;
   className?: string;

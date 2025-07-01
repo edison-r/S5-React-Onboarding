@@ -1,0 +1,23 @@
+.banner__decorative-content {
+    position: absolute;
+    width: 35%;
+    height: 65%;
+    background-color: var(--primary-color);
+    border-radius: 40% 0 0 40%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-width: 900px) {
+    .banner__decorative-content {
+        position: absolute;
+        width: 65%;
+        height: 35%;
+        background-color: var(--primary-color);
+        border-radius: 0 0 0 40%;
+        right: 0;
+        bottom: 45%;
+        z-index: -1;
+    }
+}
