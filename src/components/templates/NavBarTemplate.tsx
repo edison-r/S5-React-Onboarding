@@ -1,5 +1,5 @@
 import ButtonAtom from "../atoms/ButtonAtom";
-import MobileMenuToggleMolecule from "../molecules/MobileMenuToggleMolecule";
+import MobileMenuOrganism from "../organisms/MobileMenuOrganism";
 
 export default function NavBarTemplate(){
     return (
@@ -19,7 +19,7 @@ export default function NavBarTemplate(){
                 </nav>
                     <ButtonAtom text="LOGIN" className="btn__interaction" />
             </div>
-            <MobileMenuToggleMolecule />
+            <MobileMenuOrganism />
         </>
     )
 }

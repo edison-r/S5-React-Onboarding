@@ -1,29 +1,30 @@
-import ButtonAtom from "../atoms/ButtonAtom";
+type MobileMenuToggleMoleculeProps = {
+    isOpen: boolean;
+    setIsOpen: (isOpen: boolean) => void;
+}
 
-export default function MobileMenuToggleMolecule(){
-    return(
-        <div className="header__mobile">
-            <div className="header__logo--mobile">
-                <a href="index.html">
-                    <img src="/src/assets/img/logo-bookmark.svg" alt="Bookmark Logo"></img>
-                </a>
-            </div>
-            <a href="#" className="mobile__menu--open">
-                <img src="/src/assets/img/icon-hamburger.svg" alt="Abrir menu"/>
+export default function MobileMenuToggleMolecule({ isOpen, setIsOpen }: MobileMenuToggleMoleculeProps) {
+    const handleClick = () => {
+        setIsOpen(!isOpen);
+    }
+
+    const toggleClassName = isOpen
+    ? "mobile__menu--close"
+    : "mobile__menu--open";
+
+    return (
+        <>
+            <a onClick={handleClick} className={toggleClassName}>
+                <img 
+                    src={
+                        isOpen
+                        ? "/src/assets/img/icon-close.svg"
+                        : "/src/assets/img/icon-hamburger.svg"
+                    } 
+                    alt={ isOpen ? "Cerrar menú" : "Abrir menú"}
+                />
             </a>
-            <a href="#" className="mobile__menu--close">
-                <img src="/src/assets/img/icon-close.svg" alt="Cerrar menu"/>
-            </a> {/* Hacer un átomo condicional? */}
-            <nav className="mobile__menu">
-            <ul className="header__menu">
-                <li className="header__menu-item"><a href="#">FEATURES</a></li>
-                <li className="header__menu-item"><a href="#">PRICING</a></li>
-                <li className="header__menu-item"><a href="#">CONTACT</a></li>
-            </ul>
-            <div className="mobile__login">
-                <ButtonAtom text="LOGIN" className="btn__interaction--mobile" />
-            </div>
-        </nav>
-        </div>
-    )
+        </>
+    );
+
 }
