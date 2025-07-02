@@ -1,5 +1,5 @@
-import HeaderOrganism from "./components/organisms/HeaderOrganism";
-import MainOrganism from "./components/organisms/MainOrganism";
+import HeaderOrganism from "../organisms/HeaderOrganism";
+import MainOrganism from "../organisms/MainOrganism";
 
 function App() {
     return (

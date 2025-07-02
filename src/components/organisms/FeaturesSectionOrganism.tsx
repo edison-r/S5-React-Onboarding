@@ -3,7 +3,7 @@ import { useState } from "react";
 import DecorationAtom from "../atoms/DecorationAtom";
 import ResumeMolecule from "../molecules/ResumeMolecule"
 import TabNavMolecule from "../molecules/TabNavMolecule"
-import FeaturesOrganism from "../organisms/FeaturesOrganism"
+import FeaturesOrganism from "../molecules/FeaturesMolecule"
 
 import "./FeaturesSectionOrganism.css";
 

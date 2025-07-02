@@ -1,5 +1,5 @@
 import ButtonAtom from "../atoms/ButtonAtom";
-import ResumeMolecule from "../molecules/ResumeMolecule"
+import ResumeMolecule from "./ResumeMolecule"
 import { features } from "../../data/features";
 
 type FeaturesOrganismProps = {

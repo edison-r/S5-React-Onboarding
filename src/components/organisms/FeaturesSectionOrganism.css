@@ -1,7 +1,6 @@
 .articles__container {
     position: relative;
     max-width: 1200px;
-    height: 700px;
     margin: 0 auto;
     padding: var(--spacing-xxl);
     text-align: center;
