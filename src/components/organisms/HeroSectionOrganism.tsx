@@ -1,11 +1,11 @@
-import BannerDecorationAtom from "../atoms/BannerDecorationAtom";
+import BannerDecorationAtom from "../atoms/DecorationAtom";
 import ButtonAtom from "../atoms/ButtonAtom";
 import "./HeroSectionOrganism.css";
 
 export default function HeroSectionOrganism(){
     return(
          <div className="banner__container">
-            <BannerDecorationAtom />
+            <BannerDecorationAtom section="banner"/>
             <div className="banner__info">
                 <div className="banner__text">
                     <h1>A Simple Bookmark Manager</h1>
