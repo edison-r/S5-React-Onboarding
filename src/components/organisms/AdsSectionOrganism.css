@@ -76,3 +76,22 @@
     color: var(--primary-color);
     font-weight: var(--font-weight-medium);
 }
+
+@media (max-width: 900px) {
+    .container-ads {
+        display: flex;
+        gap: var(--spacing-sm);
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .browsers {
+        width: 250px;
+        flex-grow: 1;
+        gap: var(--spacing-sm);
+    }
+
+    .ads-btn {
+        padding: var(--spacing-xs) var(--spacing-xs);
+    }    
+}
