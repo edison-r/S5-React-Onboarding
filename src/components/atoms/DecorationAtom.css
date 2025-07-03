@@ -1,0 +1,45 @@
+.banner__decorative-content {
+    position: absolute;
+    width: 35%;
+    height: 65%;
+    background-color: var(--primary-color);
+    border-radius: 40% 0 0 40%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.article__decorative-content {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: var(--primary-color);
+    border-radius: 0 50% 50% 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-width: 900px) {
+    .banner__decorative-content {
+        position: absolute;
+        width: 65%;
+        height: 35%;
+        background-color: var(--primary-color);
+        border-radius: 0 0 0 40%;
+        right: 0;
+        bottom: 45%;
+        z-index: -1;
+    }
+
+    .article__decorative-content {
+        position: absolute;
+        width: 70%;
+        height: 35%;
+        background-color: var(--primary-color);
+        border-radius: 0 50% 50% 0;
+        left: 0;
+        bottom: 25%;
+        z-index: -1;
+    }
+}
