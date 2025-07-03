@@ -14,7 +14,7 @@ export default function HeroSectionOrganism(){
                 </div>
                 <div className="banner__btn">
                     <ButtonAtom href="https://www.google.com/intl/es_es/chrome/" text="Get it on Chrome" className="btn__primary" />
-                    <ButtonAtom href="https://www.google.com/intl/es_es/chrome/" text="Get it on Firefox" className="btn__secondary" />
+                    <ButtonAtom href="https://www.mozilla.org/es-ES/firefox/new/" text="Get it on Firefox" className="btn__secondary" />
                 </div>
             </div>
             <div className="banner-image">
