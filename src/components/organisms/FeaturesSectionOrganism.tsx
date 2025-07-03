@@ -9,6 +9,7 @@ import "./FeaturesSectionOrganism.css";
 
 export default function FeaturesSectionOrganism() {
     const [activeIndex, setActiveIndex] = useState(0);
+    
 
     return (
         <section className="articles__container">

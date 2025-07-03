@@ -1,11 +1,15 @@
+import { useState } from "react";
+import { faq } from "../../data/faq";
+
 import ResumeMolecule from "../molecules/ResumeMolecule";
 import FaqItemMolecule from "../molecules/FaqItemMolecule"
 import ButtonAtom from "../atoms/ButtonAtom";
-import { faq } from "../../data/faq";
 
 import "./FaqSectionOrganism.css"
 
 export default function FaqSectionOrganism(){
+    const [activeIndex, setActiveIndex] = useState(-1);
+
     return(
         <section className="faq__container">
             <ResumeMolecule
@@ -14,10 +18,13 @@ export default function FaqSectionOrganism(){
                 answered please feel free to email us."
             />
             <div>
-                {faq.map((item, i) => (
+                {faq.map((item, index) => (
                     <FaqItemMolecule 
-                        key={i}
+                        key={index}
+                        index={index}
                         item={item}
+                        activeIndex={activeIndex}
+                        setActiveIndex={setActiveIndex}
                     />
                 ))}
             </div>
