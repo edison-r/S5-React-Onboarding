@@ -1,4 +1,6 @@
-export const faq = [
+import type { FAQItem } from "../types/types";
+
+export const faq: FAQItem[] = [
     {
         title: "What is Bookmark?",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus."
@@ -13,6 +15,6 @@ export const faq = [
     },
     {
         title: "What about other Chromium browsers?",
-        description: "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button."
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus."
     }
 ];

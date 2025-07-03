@@ -1,0 +1,19 @@
+.input__mail {
+    flex: 1;
+    border-radius: var(--border-radius-sm);
+    border: 2px solid var(--full-white);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-xs);
+    color: var(--dark-blue);
+    transition: border-color 0.3s ease;
+}
+
+.input__mail.is-valid {
+    border-color: #4caf50;
+    background-color: #f0fff4;
+}
+
+.input__mail.is-invalid {
+    border-color: #e53935;
+    background-color: #fff5f5;
+}
