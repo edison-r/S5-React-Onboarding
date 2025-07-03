@@ -11,7 +11,7 @@ export const features: Feature[] = [
         title: "Intelligent search",
         description: "Our powerfull search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
         src: "../src/assets/img/illustration-features-tab-2.svg",
-        alt: "Ilustración de la pestaña 3" 
+        alt: "Ilustración de la pestaña 2" 
     },    
     {
         title: "Share your bookmarks",

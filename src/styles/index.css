@@ -107,17 +107,6 @@ p {
     margin-right: auto;
 }
 
-/* FAQ */
-
-.container-faq {
-    display: flex;
-    gap: var(--spacing-sm);
-    flex-direction: column;
-    align-items: center;
-    padding: var(--spacing-xxl); 
-    margin: 0 auto;
-}
-
 /* JOIN */
 .container-join {
     display: flex;
