@@ -13,6 +13,7 @@ This project is a **refactor** of the [sprint 1](https://github.com/edison-r/S1-
 ## Technologies
 
 - React + TypeScript
+- React Router
 - CSS3 (split per component)
 - Vite (dev server and build tool)
 
