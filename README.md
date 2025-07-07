@@ -1,69 +1,93 @@
-# React + TypeScript + Vite
+# ⚛️ Sprint 5 – Refactor Landing Page with Atomic Design
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **refactor** of the [sprint 1](https://github.com/edison-r/S1-Web-Evolution-Project) landing page, built from scratch using **React + TypeScript** and following the **Atomic Design methodology**. 
 
-Currently, two official plugins are available:
+## Objectives
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Convert a static HTML/CSS project into a fully modular React app
+- Practice **Atomic Design**: atoms, molecules, organisms, templates
+- Learn to manage UI state and interactivity with **React hooks**
+- Apply **React best practices**: separation of concerns, scoped CSS, and component hierarchy
+- Structure and scale the CSS for each component
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React + TypeScript
+- CSS3 (split per component)
+- Vite (dev server and build tool)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Header
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Desktop and Mobile support
+- Burger menu with open/close logic
+- Scroll lock when menu is open
+- Navigation links close the menu when clicked
+
+### Main Section
+
+- **Features (Articles)**: Tab navigation with dynamic content
+- **Ads (Extensions)**: Card layout with download CTAs
+- **FAQ**: Accordion component for questions
+- **Join**: Input field with validation (email)
+
+Each section follows Atomic Design:
+
+- Atoms: buttons, inputs, icons
+- Molecules: tab navigation, FAQ items, resume blocks
+- Organisms: full sections (FeaturesSection, FaqSection, etc.)
+
+### Footer
+
+- Nothing special here, just a footer with some info.
+
+## Project Structure
+
+```
+📁 src
+├── assets/              ← images and icons
+├── components/
+│   ├── atoms/           ← smallest UI elements (Button, Input, Icon, etc.)
+│   ├── molecules/       ← groups of atoms (TabNav, FAQ Item, Resume Block...)
+│   ├── organisms/       ← full sections (Header, Main Sections)
+│   ├── templates/       ← layout structure (optional for future)
+│   └── pages/App.tsx    ← app entry point
+├── data/                ← static data (features, FAQ...)
+├── types/               ← TypeScript interfaces
+├── styles/index.css     ← general CSS and variables
+└── main.tsx             ← React + Vite entry file
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Burger Menu**
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  - Opens/closes smoothly
+  - Adds/removes `no-scroll` class on `<body>`
+  - Controlled by state via `useState` and `useEffect`
+
+- **Features Section (Tabs)**
+
+  - Uses `useState` to switch content
+  - Each article is loaded dynamically from data
+
+- **FAQ Section (Accordion)**
+
+  - Only one item can be open at a time
+  - Smooth transitions with max-height CSS
+
+- **Email Validation**
+
+  - On blur, validates input
+  - Shows visual feedback with CSS classes
+
+## My Dev Journal
+
+This was a full React refactor from the first sprint, and my first time applying **Atomic Design** consistently. 
+
+It was also a great practice to handle real UI decisions: toggles, accordion states, email validation, and layout decisions.
+
+The fact that this is the exact same project as Sprint 1, but rebuilt with React, is a clear reminder of how far I've come. React doesn't feel extremely difficult to me, so I'm excited to keep learning aand building more with it! 🚀
+
+
