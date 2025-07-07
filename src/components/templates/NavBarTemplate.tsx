@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; 
 import ButtonAtom from "../atoms/ButtonAtom";
 import MobileMenuOrganism from "../organisms/MobileMenuOrganism";
 import "./NavBarTemplate.css";
@@ -13,9 +14,9 @@ export default function NavBarTemplate(){
                 </div>
                 <nav className="header__nav">
                     <ul className="header__menu">
-                        <li className="header__menu-item"><a href="#">FEATURES</a></li>
-                        <li className="header__menu-item"><a href="#">PRICING</a></li>
-                        <li className="header__menu-item"><a href="#">CONTACT</a></li>
+                        <li className="header__menu-item"><Link to="/#features">FEATURES</Link></li>
+                        <li className="header__menu-item"><Link to="/#download">DOWNLOAD</Link></li>
+                        <li className="header__menu-item"><Link to="/#faq">FAQ</Link></li>
                     </ul>
                 </nav>
                     <ButtonAtom text="LOGIN" className="btn__interaction" />

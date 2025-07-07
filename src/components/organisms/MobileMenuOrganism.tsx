@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; 
 import { useState, useEffect } from "react";
 import ButtonAtom from "../atoms/ButtonAtom";
 import MobileMenuToggleMolecule from "../molecules/MobileMenuToggleMolecule"
@@ -35,13 +36,13 @@ export default function MobileMenuOrganism(){
                 </div>
                 <ul className="header__menu">
                     <li className="header__menu-item">
-                        <a href="#" onClick={() => setIsOpen(false)}>FEATURES</a>
+                        <Link to="/#features" onClick={() => setIsOpen(false)}>FEATURES</Link>
                     </li>
                     <li className="header__menu-item">
-                        <a href="#"onClick={() => setIsOpen(false)}>PRICING</a>
+                        <Link to="/#download" onClick={() => setIsOpen(false)}>DOWNLOAD</Link>
                     </li>
                     <li className="header__menu-item">
-                        <a href="#"onClick={() => setIsOpen(false)}>CONTACT</a>
+                        <Link to="/#faq" onClick={() => setIsOpen(false)}>FAQ</Link>
                     </li>
                 </ul>
                 <div className="mobile__login">

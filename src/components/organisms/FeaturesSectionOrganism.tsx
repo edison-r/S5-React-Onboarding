@@ -12,7 +12,7 @@ export default function FeaturesSectionOrganism() {
     
 
     return (
-        <section className="articles__container">
+        <section id="features" className="articles__container">
             <DecorationAtom section="article"/>
             <ResumeMolecule 
                 title="Features" 

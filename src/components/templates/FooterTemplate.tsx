@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; 
 import "./FooterTemplate.css"
 
 export default function FooterTemplate(){
@@ -8,9 +9,9 @@ export default function FooterTemplate(){
             </a>
             <nav className="footer__nav">
                 <ul className="footer__all">
-                    <li className="footer__opt"><a className="text-white hover:text-[#FA5959]" href="#">FEATURES</a></li>
-                    <li className="footer__opt"><a className="text-white hover:text-[#FA5959]" href="#">PRICING</a></li>
-                    <li className="footer__opt"><a className="text-white hover:text-[#FA5959]" href="#">CONTACT</a></li>
+                    <li className="footer__opt"><Link to="/#features">FEATURES</Link></li>
+                    <li className="footer__opt"><Link to="/#download">DOWNLOAD</Link></li>
+                    <li className="footer__opt"><Link to="/#faq">FAQ</Link></li>
                 </ul>
             </nav>
             <div className="footer__social">

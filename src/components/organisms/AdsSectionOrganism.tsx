@@ -6,7 +6,7 @@ import "./AdsSectionOrganism.css";
 
 export default function AdsSectionOrganism(){
     return(
-        <section className="ads__container">
+        <section id="download" className="ads__container">
             <ResumeMolecule
                 title="Download the extension"
                 text="We’ve got more browsers in the pipeline. Please do let us know if you’ve

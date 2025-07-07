@@ -4,7 +4,7 @@ import "./JoinSectionOrganism.css";
 
 export default function JoinSectionOrganism(){
     return(
-        <div className="container__join">
+        <div id="join" className="container__join">
             <div className="join__resume">
                 <h4>35,000+ ALREADY JOINED</h4>
                 <h2>Stay up-to-date with what we're doing</h2>

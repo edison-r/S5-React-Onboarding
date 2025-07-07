@@ -11,7 +11,7 @@ export default function FaqSectionOrganism(){
     const [activeIndex, setActiveIndex] = useState(-1);
 
     return(
-        <section className="faq__container">
+        <section id="faq" className="faq__container">
             <ResumeMolecule
                 title="Frequently Asked Questions"
                 text="Here are some of our FAQs. If you have any other questions you’d like
