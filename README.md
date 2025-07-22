@@ -4,7 +4,7 @@ This project is a **refactor** of the [sprint 1](https://github.com/edison-r/S1-
 
 ## Objectives
 
-- Convert a static HTML/CSS project into a fully modular React app
+- Technical migration from vanilla HTML/CSS into a fully modular React app
 - Practice **Atomic Design**: atoms, molecules, organisms, templates
 - Learn to manage UI state and interactivity with **React hooks**
 - Apply **React best practices**: separation of concerns, scoped CSS, and component hierarchy
